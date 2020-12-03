@@ -1,38 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
+
+body {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #217E3E;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #3BB44A;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div .MuiFormLabel-root.Mui-focused {
+  color: #217E3E;
+}
+
+div .MuiInput-underline:after {
+  border-bottom: 2px solid #3BB44A;
+}
+
+div .MuiButton-textPrimary {
+  color: #217E3E;
+}
+
+.logo {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.logo-first {
+  color: #3BB44A;
+}
+
+.logo-second {
+  color: #217E3E;
+}
+
+.quiz__container {
+  font-family: roboto, serif;
+  width: 75%;
+}
+
+.answer-button__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.answer-button__container .MuiButton-outlinedPrimary {
+  color: #217E3E;
+  border: 1px solid #3BB44A;
+}
+
+.answer-button__container .MuiButton-outlinedPrimary:hover {
+  color: #217E3E;
+  border: 1px solid #3BB44A;
+}
+
+.answer-button {
+  width: 20%;
+}
+
+.game__container {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz__contanier {
+  transition: all 2s ease;
+}
+
+.name-input__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.result__correct {
+  color: #217E3E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result__incorrect {
+  color: red;
 }
