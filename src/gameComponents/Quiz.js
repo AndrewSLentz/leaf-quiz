@@ -38,7 +38,7 @@ function Quiz ({
                 <h2>{`You answered ${correctAnswers}/${questionIndex} questions correctly!`}</h2>
                 {
                     questions.map((question, i) => {
-                        const answerCorrect = answers[i] === question.answer ? true : false;
+                        const answerCorrect = answers[i] === question.answer;
                         return (
                             <div key={ question.answer } className="result__block">
                                 <h4>{ `Question ${i + 1} was: ${question.questionText}` }</h4>
