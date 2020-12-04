@@ -12,8 +12,12 @@ const Game = () => {
     const [correctAnswers, setCorrectAnswers] = useState(0);
 
     const getQuestions = async () => {
-        const quiz = await axios.get('http://34.220.149.42/questions.json');
-        setQuestions(quiz.data);
+        try {
+            const quiz = await axios.get('http://34.220.149.42/questions.json');
+            setQuestions(quiz.data);
+        } catch (error) {
+            console.error(error);
+        }      
     }
 
     const handleNewGame = () => {
